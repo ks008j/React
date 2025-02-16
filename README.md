@@ -13,6 +13,15 @@
 ## 25.02.16
 
 - React.useState 는 컴포넌트의 상태를 간편하게 생성하고 업데이트 해주는 도구라고 함
-  > state 생성과 동시에 가져야할 초기값을 useState 함수에 인자로 넣어주면 state와 setState를 두가지 요소를 배열 형태로 리턴해준다.
-  >
-  > > ex) const [state, setState] = useState(초기값);
+
+  - state 생성과 동시에 가져야할 초기값을 useState 함수에 인자로 넣어주면 state와 setState를 두가지 요소를 배열 형태로 리턴해준다.
+  - ex) const [state, setState] = useState(초기값);
+
+- props는 상위 컴포넌트가 하위 컴포넌트에 값을 전달할 때 사용
+
+- props는 수정할 수 없다는 특징이 있음
+
+  - 자식입장에서는 읽기 전용인 데이터임
+
+- React.memo는 Memoization(메모이제이션) 기법으로 동작함
+  - React는 컴포넌트를 재렌더링하지 않고 **마지막으로 렌더링된 결과를 재사용**하며, **함수 컴포넌트 안에서 구현한 state나 context가 변할 때는 재렌더링된다.**
